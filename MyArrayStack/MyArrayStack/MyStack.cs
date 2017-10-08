@@ -25,9 +25,9 @@ namespace MyArrayStack
             get { return count == 0; }
         }
 
-        public int Count
+        public int Count()
         {
-            get { return count; }
+            return count;
         }
 
         public void Push(T element)
@@ -51,6 +51,8 @@ namespace MyArrayStack
 
         public T Peek()
         {
+            if (IsEmpty)
+                throw new Exception("Стек пуст");
             return elements[count - 1];
         }
 

@@ -33,7 +33,7 @@ namespace StackTest
             stack.Push("8");
             stack.Push("9");
             int expected = 9;
-            Assert.AreEqual(expected, stack.Count);
+            Assert.AreEqual(expected, stack.Count());
 
         }
         [Test]
@@ -68,7 +68,7 @@ namespace StackTest
             stack.Push("6");
             stack.Push("8");
             int expected = 2;
-            Assert.AreEqual(expected, stack.Count);
+            Assert.AreEqual(expected, stack.Count());
 
         }
 

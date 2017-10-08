@@ -12,6 +12,6 @@ namespace MyArrayStack
             T Pop();
             T Peek();
             bool Contains(T a);
-
-        }
+        int Count();
+    }
     }
